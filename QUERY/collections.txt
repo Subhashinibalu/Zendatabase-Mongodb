@@ -1,0 +1,135 @@
+
+=>USER:
+
+db.user.insertMany([{user_id:201,user_name:"subha",mentor_id:301,company_id:601},
+{user_id:202,user_name:"subhash",mentor_id:301,company_id:601},
+{user_id:203,user_name:"bala",mentor_id:302,company_id:602},
+{user_id:204,user_name:"sana",mentor_id:301,company_id:603},
+{user_id:205,user_name:"sarvesh",mentor_id:301,company_id:604},
+{user_id:206,user_name:"sanjay",mentor_id:301,company_id:605},
+{user_id:207,user_name:"kumar",mentor_id:301,company_id:606},
+{user_id:208,user_name:"krishna",mentor_id:301,company_id:601},
+{user_id:209,user_name:"mahitha",mentor_id:301,company_id:602},
+{user_id:210,user_name:"haripreetha",mentor_id:301,company_id:603},
+{user_id:211,user_name:"hari",mentor_id:302,company_id:604},
+{user_id:212,user_name:"sanchana",mentor_id:301,company_id:605},
+{user_id:213,user_name:"lavanya",mentor_id:301,company_id:601},
+{user_id:214,user_name:"sugirthan",mentor_id:302,company_id:604},
+{user_id:215,user_name:"dhakshi",mentor_id:301,company_id:603},
+{user_id:216,user_name:"pranav",mentor_id:301,company_id:603},
+{user_id:217,user_name:"hemani",mentor_id:301,company_id:602},
+{user_id:218,user_name:"charu",mentor_id:302,company_id:604},
+{user_id:219,user_name:"selva",mentor_id:301,company_id:606},
+{user_id:220,user_name:"sugan",mentor_id:301,company_id:604},
+{user_id:221,user_name:"mahi",mentor_id:302,company_id:603},
+{user_id:222,user_name:"siva",mentor_id:301},
+{user_id:223,user_name:"sarvan",mentor_id:302},
+{user_id:224,user_name:"sarvan",mentor_id:302},
+{user_id:225,user_name:"sarvan",mentor_id:302},
+{user_id:226,user_name:"sarvan",mentor_id:302},
+{user_id:227,user_name:"sarvan",mentor_id:302},
+{user_id:228,user_name:"sarvan",mentor_id:302},
+{user_id:229,user_name:"sarvan",mentor_id:302},
+{user_id:230,user_name:"sarvan",mentor_id:302},
+{user_id:231,user_name:"sarvan",mentor_id:302},
+{user_id:232,user_name:"sarvan",mentor_id:303},
+{user_id:233,user_name:"sarvan",mentor_id:303},
+{user_id:234,user_name:"sarvan",mentor_id:303},
+{user_id:235,user_name:"sarvan",mentor_id:302},
+{user_id:236,user_name:"sarvan",mentor_id:303},
+{user_id:237,user_name:"sarvan",mentor_id:302},
+{user_id:238,user_name:"sarvan",mentor_id:302}
+]);
+
+
+=>CODEKATA:
+db.codekata.insertMany([{problem:"problem1",user_id:201},
+{problem:"problem1",user_id:202},
+{problem:"problem1",user_id:203},
+{problem:"problem1",user_id:204},
+{problem:"problem1",user_id:207},
+{problem:"problem2",user_id:202},
+{problem:"problem2",user_id:201},
+{problem:"problem2",user_id:208},
+{problem:"problem2",user_id:203},
+{problem:"problem2",user_id:206},
+{problem:"problem2",user_id:209},
+{problem:"problem3",user_id:209},
+{problem:"problem3",user_id:208},
+{problem:"problem3",user_id:206},
+{problem:"problem3",user_id:205},
+{problem:"problem3",user_id:203},
+{problem:"problem3",user_id:202},
+{problem:"problem3",user_id:201},
+{problem:"problem4",user_id:203},
+{problem:"problem4",user_id:202},
+{problem:"problem4",user_id:204},
+{problem:"problem4",user_id:209},
+{problem:"problem4",user_id:206},
+{problem:"problem4",user_id:208},
+{problem:"problem5",user_id:211},
+{problem:"problem5",user_id:204},
+{problem:"problem5",user_id:201},
+{problem:"problem5",user_id:202},
+{problem:"problem5",user_id:203},
+{problem:"problem6",user_id:208},
+{problem:"problem6",user_id:207},
+{problem:"problem6",user_id:206},
+{problem:"problem6",user_id:202},
+{problem:"problem6",user_id:201}
+]);
+
+
+=>ATTENDANCE:
+db.attendance.insertMany([{day:"day1", attendance:"absent",topic_id:101, day_id:701,user_absent:[
+  {user_id:201},{user_id:202},{user_id:203},{user_id:204},{user_id:205},{user_id:206}
+  ]},
+{day:"day2", attendance:"absent",topic_id:102, day_id:702,user_absent:[
+  {user_id:211},{user_id:212},{user_id:203},{user_id:204},{user_id:207},{user_id:206}
+  ]},
+{day:"day3", attendance:"absent",topic_id:103, day_id:703,user_absent:[
+  {user_id:211},{user_id:222},{user_id:223},{user_id:204},{user_id:205},{user_id:206}
+  ]},
+{day:"day4", attendance:"absent",topic_id:104, day_id:704,user_absent:[
+  {user_id:213},{user_id:202},{user_id:223},{user_id:204},{user_id:205},{user_id:206}
+  ]},
+{day:"day5", attendance:"absent", topic_id:105,day_id:705,user_absent:[
+  {user_id:211},{user_id:202},{user_id:203},{user_id:224},{user_id:205},{user_id:206}
+  ]},
+{day:"day6", attendance:"absent",topic_id:106, day_id:706,user_absent:[
+  {user_id:221},{user_id:202},{user_id:203},{user_id:204},{user_id:205},{user_id:216}
+  ]}]);
+
+  =>TOPICS:
+  db.topic.insertMany([
+{topic_id:101,topic_name:"usestatehook",topic_date:new Date('2024-October-28'),task_id:501},
+{topic_id:102,topic_name:"Html css",topic_date:new Date('2024-November-11'),task_id:502},
+{topic_id:103,topic_name:"Redux",topic_date:new Date('2024-October-21'),task_id:503},
+{topic_id:104,topic_name:"Statemanagement",topic_date:new Date('2024-October-16'),task_id:504},
+{topic_id:105,topic_name:"Context api",topic_date:new Date('2024-August-11'),task_id:505},
+{topic_id:106,topic_name:"Async programming",topic_date:new Date('2024-August-21'),task_id:506}]);
+
+
+=>TASKS:
+db.tasks.insertMany([{task_id:501,task_name:"task1",notsubmitted:[{user_id:202},{user_id:227},{user_id:212},{user_id:223},{user_id:222}],topic_id:101},
+{task_id:502,task_name:"task2",notsubmitted:[{user_id:212},{user_id:227},{user_id:213},{user_id:223},{user_id:219}],topic_id:102},
+{task_id:503,task_name:"task3",notsubmitted:[{user_id:202},{user_id:227},{user_id:212},{user_id:223},{user_id:222}],topic_id:103},
+{task_id:504,task_name:"task4",notsubmitted:[{user_id:202},{user_id:227},{user_id:212},{user_id:223},{user_id:222}],topic_id:104},
+{task_id:505,task_name:"task5",notsubmitted:[{user_id:202},{user_id:227},{user_id:212},{user_id:223},{user_id:222}],topic_id:105},
+{task_id:506,task_name:"task6",notsubmitted:[{user_id:202},{user_id:227},{user_id:212},{user_id:223},{user_id:222}],topic_id:106}]);
+
+
+=>COMPANY_DRIVE:
+db.company_drive.insertMany([{company_id:601,company:"Microsoft Corporation",drive_date:new Date("2024-10-16")},
+{company_id:602,company:"Accenture",drive_date:new Date("2024-11-01")},
+{company_id:603,company:"Cognizant",drive_date:new Date("2024-10-26")},
+{company_id:604,company:"Infosys",drive_date:new Date("2024-09-16")},
+{company_id:605,company:"TCS",drive_date:new Date("2024-10-20")},
+{company_id:606,company:"SAP",drive_date:new Date("2024-12-06")}
+]);
+
+=>MENTORS:
+db.mentors.insertMany([{mentor_id:301,mentor_name:"Rupan"},
+{mentor_id:302,mentor_name:"Balasubramanian"},
+{mentor_id:303,mentor_name:"Chakravarthy"}
+]);
